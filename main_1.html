@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>We are NIKE</title>
+		<style>
+			#fixed{ /*리모콘 컨트롤*/
+				top:10px;
+				right:10px;
+				position: fixed;				
+				text-align: center;
+			}
+
+			#login_div{
+				padding:0px 0px 0px 10px;
+				margin:0px 0px 50px 0px;
+			}
+
+			#logo_div{
+				text-align: center;
+				margin:0px 0px 50px 0px;
+			}
+
+	</style>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script>
+		function changeStyle(choise) {
+			if(choise==0){
+				document.getElementById("p1").style.color = "red";	
+			}else if(choise==1){
+				document.getElementById("p1").style.color = "black";
+			}else if(choise==2){
+				document.getElementById("p1").style.color = "blue";
+			}else if(choise==3){
+				document.getElementById("p1").style.color = "green";
+			}
+	    }
+	</script>
+	</head>
+	
+	<body>
+		<!--리모콘-->
+		<div id="fixed">
+			<div>
+				<audio src="./media/old_pop.mp3" autoplay controls></audio>
+			</div>
+			
+			<div id="bgchange_div"> <!-- 글씨색 변경-->
+				<input type="button" value="   " onclick="changeStyle(0)" style="background-color: red;"/>
+				<input type="button" value="   " onclick="changeStyle(1)" style="background-color: black;"/>
+				<input type="button" value="   " onclick="changeStyle(2)" style="background-color: blue;"/>
+				<input type="button" value="   " onclick="changeStyle(3)" style="background-color: green;"/>
+			</div> 
+		</div>
+
+		<!--상단 로그인 영역-->
+		<div id="login_div">
+			<p id="p1"><b>admin</b>님 입장을 환영합니다.&nbsp;&nbsp;<a href="index.html"><img src="./img/btn/log_out_btn.jpg" width="50px" height="20px"/></a></p>
+		</div>
+
+		<!--로고 영역-->
+		<div id="logo_div">
+			<a href="main_1.html"><img src="./img/black_logo.png" style="width:400px; height:200px;"/></a>
+		</div>
+
+		<iframe src="index1_1.html" style="width:100%;height:800px;" frameborder="0"></iframe>
+	</body>
+</html>

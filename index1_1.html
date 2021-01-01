@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>We are NIKE</title>
+		<style>
+			#shoes_div{
+				margin:0px 0px 50px 0px;
+				text-align: center;
+				position: relative;
+            	animation: boxmove 5s linear infinite alternate;
+			}
+
+	        @keyframes boxmove {
+	            from { left: 170px; }
+	            to { left: 340px; }
+	        }
+
+			#banner_div{
+				position:absolute;
+  				top:14px;
+   				left:100px;
+			}
+
+	        #shoes_name{
+	        	text-align:center;
+	        }
+
+	        #shoes_description{
+	        	margin: 0px 0px 100px 0px;
+	        	padding: 10px 10px 10px 10px;
+	        }
+
+	        #btn_div{
+	        	text-align:center;
+	        }
+
+	        #hide{
+	        	text-align:right;	
+	        }
+
+	        #banner_bg{
+	        	background-color: black;
+	        	padding: 6px 0px 0px 0px;
+	        	margin: 0px 0px 0px 0px;
+	        }
+		</style>
+		<script src="jquery-3.2.1.min.js"></script>
+		<script>
+			/*설명보기 없애기*/
+	        $(document).ready(function () {
+	            $("input.hide").click(function () {
+    	            $("p").hide();
+            });
+        	    $("input.show").click(function () {
+            	    $("p").show();
+            	});
+        	});
+		</script>
+	</head>
+	
+	<body>
+		<!--이미지 사진-->
+		<div id="banner_bg">
+			<div id="banner_div">
+				<img src="./img/km_bg.jpg" style="width:500px; height:335px;"/>
+			</div>
+			<div id="shoes_div">
+				<div id="box1">
+					<img src="./img/shoes/main/1.jpg" style="width:150px; height:166px;"/>
+					<img src="./img/shoes/main/2.jpg" style="width:150px; height:166px;"/>
+					<img src="./img/shoes/main/3.jpg" style="width:150px; height:166px;"/>
+				</div>
+				<div id="box2">
+					<img src="./img/shoes/main/4.jpg" style="width:150px; height:166px;"/>
+					<img src="./img/shoes/main/5.jpg" style="width:150px; height:166px;"/>
+					<img src="./img/shoes/main/6.jpg" style="width:150px; height:166px;"/>
+				</div>
+			</div>
+		</div>
+
+		<!--제품설명-->
+		<div id="description_div">
+			<div id="shoes_name">
+				<h1 style="font-size: 42px;">에어 조던 레거시 312 로우</h1>
+			</div>
+			<div id="shoes_description">
+				<div id="hide">
+					<input type="image" src="./img/btn/read_btn.jpg" class="show"/>
+					<input type="image" src="./img/btn/close_btn.jpg" class="hide"/>
+				</div>
+				<p><b>AIR JORDAN LEGACY 312 HOT LAVA</b> 2019년 8월 11일에 출시됩니다. 현재 <b>사전예약</b>중입니다.
+				이 모델은 역사상 가장 위대하고 저명하며, 다재다능한 스포츠 선수를 통해 유명해진 모델 나이키 에어트레이너 3에서 영감을 얻었습니다. 그리고 <b>박성호</b>가 관심있어 하는 제품입니다. 네가 원하는 걸 바꾸지마, 이 세상을 바꿔버려.<p>
+			</div>
+			<div id="btn_div">
+				<a href="index2_1.html"><img src="./img/btn/more_btn.jpg"/></a>
+			</div>
+		</div>
+	</body>
+</html>

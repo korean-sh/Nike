@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>We are NIKE</title>
+		<style>
+			#shoes_div{
+				margin:0px 0px 30px 0px;
+				text-align: center;
+			}
+
+			#choice_div{
+				text-align: center;	
+			}
+
+			#price_div{
+				text-align: center;	
+				color:gray;
+			}
+		</style>
+		<script>
+			function fn_slide(choice){
+				var array = [];
+				array[0] = "./img/shoes/black.jpg";
+				array[1] = "./img/shoes/gold.jpg";
+				array[2] = "./img/shoes/sky.jpg";
+				array[3] = "./img/shoes/white.jpg";
+
+				if(choice == 0){
+					document.getElementById("main").src = array[choice];
+				}else if(choice == 1){
+					document.getElementById("main").src = array[choice];
+				}else if(choice == 2){
+					document.getElementById("main").src = array[choice];
+				}else if(choice == 3){
+					document.getElementById("main").src = array[choice];
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="shoes_div">
+			<img id="main" src="./img/shoes/black.jpg" style="width:600px; height:500px;"/>
+		</div>
+
+		<div id="choice_div">
+			<span><input type="button" onclick="fn_slide(0)" value="   " style="background-color: black;"/></span>
+			<span><input type="button" onclick="fn_slide(1)" value="   " style="background-color: orange;"/></span>
+			<span><input type="button" onclick="fn_slide(2)" value="   " style="background-color: aqua;"/></span>
+			<span><input type="button" onclick="fn_slide(3)" value="   " style="background-color: gray;"/></span>
+		</div> 
+
+		<div id="price_div">
+			<div><h2>에어 조던 레거시 312 로우</h2></div>
+			<div><h3>\198,000</h3></div>
+			<a href="index3_1.html"><img src="./img/btn/purchase_btn.jpg"/></a>
+		</div>
+
+	</body>
+</html>

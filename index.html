@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>We are NIKE</title>
+		<style>
+			#logo_div{
+				text-align: center;
+				margin:150px 0px 0px 0px;
+			}
+
+			#btn{
+				text-align: center;
+				margin:40px 0px 0px 0px;
+			}
+
+			body{
+				background:url("./img/login_bg.jpg") no-repeat;
+				background-size: 100%;
+			}
+		</style>
+		<script>
+			function fn_login(){
+				var id = document.getElementById("text_id").value;
+				var pwd = document.getElementById("text_pwd").value;
+
+				if(id.length < 1){
+					alert("아이디를 입력해주세요.");
+					return false;
+				}else if(pwd.length < 1){
+					alert("비밀번호를 입력해주세요.");
+					return false;
+				}else if(id == "admin" && pwd == "1234"){
+					alert("나이키에 오신걸 환영합니다.");
+					return true;
+				}else{
+					alert("아이디나 비밀번호를 확인해주세요.");
+					return false;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!--로고 영역-->
+		<div id="logo_div">
+			<a href="login_1.html"><img src="./img/white_logo.png" style="width:400px; height:215px;"/></a>
+		</div>
+
+		<form name="longin" action="main_1.html" method="GET" onsubmit="return fn_login()">
+			<table align="center" >
+				<tr>
+					<td align="center" style="color:white;"><b>ID</b></td>
+					<td><input type="text" id="text_id" placeholder="admin"></td>
+				</tr>
+				<tr>
+					<td style="color:white;"> <b>PASSWORD</b></td>
+					<td><input type="password" id="text_pwd" placeholder="1234"></td>
+				</tr>
+			</table>
+			<div id="btn"><input type="image" src="./img/btn/log_in_btn.jpg" style="width:150px;"/></div>
+		</form>
+	</body>
+</html>

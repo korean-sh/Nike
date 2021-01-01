@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>#3 We are NIKE</title>
+		<style>
+			#thanks_div{
+				margin: 50px 0px 50px 0px;
+				text-align: center;
+			}
+
+	        #go_main_div{
+	        	text-align:center;
+	        }
+
+	        #msg{
+	        	background-color:black;
+	        	color:white;
+	        }
+		</style>
+	</head>
+	<body>
+		<div id="thanks_div">
+			<div><img src="./img/result_bg.jpg" style="width:70%;height:70%;"/></a></div>
+			<h1>불가능을 딛고, 새로운 역사를 쓰다.</h1>
+			<div id="msg"><h1>Thank you for your purchase!<h1></div>
+			<script>
+				var number = [];
+				number[0] = parseInt(Math.random()*9);
+				number[1] = parseInt(Math.random()*9);
+				number[2] = parseInt(Math.random()*9);
+				number[3] = parseInt(Math.random()*9);
+				number[4] = "-";
+
+				number[5] = parseInt(Math.random()*9);
+				number[6] = parseInt(Math.random()*9);
+				number[7] = parseInt(Math.random()*9);
+				number[8] = parseInt(Math.random()*9);
+				number[9] = "-";
+
+				number[10] = parseInt(Math.random()*9);
+				number[11] = parseInt(Math.random()*9);
+				number[12] = parseInt(Math.random()*9);
+				number[13] = parseInt(Math.random()*9);
+				number[14] = "-";
+
+				number[15] = parseInt(Math.random()*9);
+				number[16] = parseInt(Math.random()*9);
+				number[17] = parseInt(Math.random()*9);
+				number[18] = parseInt(Math.random()*9);
+
+				document.write("송장번호 : ");
+				for(var i = 0; i < number.length; i++){
+					
+					document.write(number[i]);
+				}
+			</script>
+			<p style="color:red;">(송장번호는 주문시 매번 달라집니다.)	</p>
+		</div>
+
+		<div id="go_main_div">
+			<a href="index1_1.html"><img src="./img/btn/gotomain_btn.jpg"/></a>
+		</div>
+
+	</body>
+</html>
