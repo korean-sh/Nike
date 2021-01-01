@@ -1,6 +1,6 @@
 # 나이키 온라인 쇼핑몰 (HTML+JS)
 
-## You can confirm this project at <a href="korean-sh.github.io/Nike/">URL</a>.
+## You can confirm this project at <a href="https://korean-sh.github.io/Nike/">URL</a>.
 
 <br/>
 
